@@ -50,7 +50,7 @@ class Test_OA_Api_XmlRpc extends UnitTestCase
      */
     var $oApi;
 
-    function Test_OA_Api_XmlRpc($createDefaultManager = true)
+    function __construct($createDefaultManager = true)
     {
         $this->UnitTestCase();
 
@@ -95,7 +95,7 @@ class Test_OA_Api_XmlRpc extends UnitTestCase
 
 class Mocked_OA_Api_Xmlrpc extends OA_Api_Xmlrpc
 {
-    function Mocked_OA_Api_Xmlrpc($username, $password)
+    function __construct($username, $password)
     {
         parent::OA_Api_Xmlrpc('foo', 'bar', $username, $password);
     }

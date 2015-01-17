@@ -30,7 +30,7 @@
          *                            a placeholder for the original message.
          *    @access public
          */
-        function FieldExpectation($value, $message = '%s') {
+        function __construct($value, $message = '%s') {
             $this->SimpleExpectation($message);
             if (is_array($value)) {
                 sort($value);
@@ -144,7 +144,7 @@
          *    @param string $message  Optiona message override. Can use %s as
          *                            a placeholder for the original message.
          */
-        function HttpHeaderExpectation($header, $value = false, $message = '%s') {
+        function __construct($header, $value = false, $message = '%s') {
             $this->SimpleExpectation($message);
             $this->_expected_header = $this->_normaliseHeader($header);
             $this->_expected_value = $value;
@@ -270,7 +270,7 @@
          *    @param string $message    Optiona message override. Can use %s as
          *                              a placeholder for the original message.
          */
-        function NoHttpHeaderExpectation($unwanted, $message = '%s') {
+        function __construct($unwanted, $message = '%s') {
             $this->HttpHeaderExpectation($unwanted, false, $message);
         }
 
@@ -315,7 +315,7 @@
          *    @param string $message    Customised message on failure.
          *    @access public
          */
-        function TextExpectation($substring, $message = '%s') {
+        function __construct($substring, $message = '%s') {
             $this->SimpleExpectation($message);
             $this->_substring = $substring;
         }
@@ -388,7 +388,7 @@
          *    @param string $message    Customised message on failure.
          *    @access public
          */
-        function NoTextExpectation($substring, $message = '%s') {
+        function __construct($substring, $message = '%s') {
             $this->TextExpectation($substring, $message);
         }
 
@@ -440,8 +440,8 @@
          *                             the class name if none specified.
          *    @access public
          */
-        function WebTestCase($label = false) {
-            $this->SimpleTestCase($label);
+        function __construct($label = false) {
+            parent::__construct($label);
         }
 
         /**
