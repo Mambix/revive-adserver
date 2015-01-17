@@ -596,7 +596,7 @@ class HTML_TreeMenu_DHTML extends HTML_TreeMenu_Presentation
     */
     function __construct(&$structure, $options = array(), $isDynamic = true)
     {
-        $this->HTML_TreeMenu_Presentation($structure);
+        parent::__construct($structure);
         $this->isDynamic = $isDynamic;
 
         // Defaults

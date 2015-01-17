@@ -203,7 +203,7 @@ class XML_Parser extends PEAR
      */
     function __construct($srcenc = null, $mode = 'event', $tgtenc = null)
     {
-        $this->PEAR('XML_Parser_Error');
+        parent::__construct('XML_Parser_Error');
 
         $this->mode   = $mode;
         $this->srcenc = $srcenc;

@@ -162,7 +162,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleTag('title', $attributes);
+            parent::__construct('title', $attributes);
         }
     }
 
@@ -179,7 +179,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleTag('a', $attributes);
+            parent::__construct('a', $attributes);
         }
 
         /**
@@ -213,7 +213,7 @@
          *                               string values.
          */
         function __construct($name, $attributes) {
-            $this->SimpleTag($name, $attributes);
+            parent::__construct($name, $attributes);
             $this->_value = false;
             $this->_label = false;
             $this->_is_set = false;
@@ -318,7 +318,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
             if ($this->getAttribute('value') === false) {
                 $this->_setAttribute('value', '');
             }
@@ -361,7 +361,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
             if ($this->getAttribute('value') === false) {
                 $this->_setAttribute('value', 'Submit');
             }
@@ -419,7 +419,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
         }
 
         /**
@@ -495,7 +495,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('button', $attributes);
+            parent::__construct('button', $attributes);
         }
 
         /**
@@ -551,7 +551,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('textarea', $attributes);
+            parent::__construct('textarea', $attributes);
         }
 
         /**
@@ -636,7 +636,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
         }
 
         /**
@@ -679,7 +679,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('select', $attributes);
+            parent::__construct('select', $attributes);
             $this->_options = array();
             $this->_choice = false;
         }
@@ -766,7 +766,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('select', $attributes);
+            parent::__construct('select', $attributes);
             $this->_options = array();
             $this->_values = false;
         }
@@ -857,7 +857,7 @@
          *    Stashes the attributes.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('option', $attributes);
+            parent::__construct('option', $attributes);
         }
 
         /**
@@ -919,7 +919,7 @@
          *    @param array $attributes        Hash of attributes.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
             if ($this->getAttribute('value') === false) {
                 $this->_setAttribute('value', 'on');
             }
@@ -977,7 +977,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleWidget('input', $attributes);
+            parent::__construct('input', $attributes);
             if ($this->getAttribute('value') === false) {
                 $this->_setAttribute('value', 'on');
             }
@@ -1333,7 +1333,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleTag('label', $attributes);
+            parent::__construct('label', $attributes);
         }
 
         /**
@@ -1359,7 +1359,7 @@
          *                               string values.
          */
         function __construct($attributes) {
-            $this->SimpleTag('form', $attributes);
+            parent::__construct('form', $attributes);
         }
     }
 

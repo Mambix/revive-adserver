@@ -125,7 +125,7 @@
          *    @access public
          */
         function __construct() {
-            $this->SimpleSaxListener();
+            parent::__construct();
         }
 
         /**

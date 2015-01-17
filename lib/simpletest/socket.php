@@ -85,7 +85,7 @@
          *    @access public
          */
         function __construct($host, $port, $timeout, $block_size = 255) {
-            $this->SimpleStickyError();
+            parent::__construct();
             if (! ($this->_handle = $this->_openSocket($host, $port, $error_number, $error, $timeout))) {
                 $this->_setError("Cannot open [$host:$port] with [$error] within [$timeout] seconds");
                 return;

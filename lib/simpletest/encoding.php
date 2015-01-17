@@ -335,7 +335,7 @@
          *    @access public
          */
         function __construct($query = false) {
-            $this->SimpleEncoding($query);
+            parent::__construct($query);
         }
 
         /**
@@ -390,7 +390,7 @@
          *    @access public
          */
         function __construct($query = false) {
-            $this->SimpleGetEncoding($query);
+            parent::__construct($query);
         }
 
         /**
@@ -419,7 +419,7 @@
          *    @access public
          */
         function __construct($query = false) {
-            $this->SimpleEncoding($query);
+            parent::__construct($query);
         }
 
         /**

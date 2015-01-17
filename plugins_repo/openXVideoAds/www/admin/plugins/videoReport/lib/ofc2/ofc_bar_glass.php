@@ -32,7 +32,7 @@ class bar extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -41,7 +41,7 @@ class bar_glass extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_glass";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -50,7 +50,7 @@ class bar_cylinder extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_cylinder";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -59,7 +59,7 @@ class bar_cylinder_outline extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_cylinder_outline";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -68,7 +68,7 @@ class bar_rounded_glass extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_round_glass";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -77,7 +77,7 @@ class bar_round extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_round";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -86,7 +86,7 @@ class bar_dome extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_dome";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 
@@ -95,7 +95,7 @@ class bar_round3d extends bar_base
 	function __construct()
 	{
 		$this->type      = "bar_round3d";
-		parent::bar_base();
+		parent::__construct();
 	}
 }
 

@@ -125,7 +125,7 @@
          *    @access public
          */
         function __construct($url, $proxy, $username = false, $password = false) {
-            $this->SimpleRoute($url);
+            parent::__construct($url);
             $this->_proxy = $proxy;
             $this->_username = $username;
             $this->_password = $password;

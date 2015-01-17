@@ -464,7 +464,7 @@
          *    @access public
          */
         function __construct(&$parser) {
-            $this->SimpleLexer($parser, 'text');
+            parent::__construct($parser, 'text');
             $this->mapHandler('text', 'acceptTextToken');
             $this->_addSkipping();
             foreach ($this->_getParsedTags() as $tag) {

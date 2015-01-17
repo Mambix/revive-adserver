@@ -956,7 +956,7 @@ class MDB2_Error extends PEAR_Error
     function __construct($code = MDB2_ERROR, $mode = PEAR_ERROR_RETURN,
               $level = E_USER_NOTICE, $debuginfo = null)
     {
-        $this->PEAR_Error('MDB2 Error: '.MDB2::errorMessage($code), $code,
+        parent::__construct('MDB2 Error: '.MDB2::errorMessage($code), $code,
             $mode, $level, $debuginfo);
     }
 

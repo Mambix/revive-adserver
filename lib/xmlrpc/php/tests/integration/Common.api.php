@@ -52,7 +52,7 @@ class Test_OA_Api_XmlRpc extends UnitTestCase
 
     function __construct($createDefaultManager = true)
     {
-        $this->UnitTestCase();
+        parent::__construct();
 
         $this->oApi = &Test_OA_Api_XmlRpc::staticGetApi($createDefaultManager);
     }
@@ -97,7 +97,7 @@ class Mocked_OA_Api_Xmlrpc extends OA_Api_Xmlrpc
 {
     function __construct($username, $password)
     {
-        parent::OA_Api_Xmlrpc('foo', 'bar', $username, $password);
+        parent::__construct('foo', 'bar', $username, $password);
     }
 
     function &_getClient($service)

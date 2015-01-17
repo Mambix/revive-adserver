@@ -155,7 +155,7 @@
 
     class SpecialSimpleStub extends SimpleMock {
         function __construct() {
-            $this->SimpleMock();
+            parent::__construct();
         }
     }
     SimpleTest::setMockBaseClass('SpecialSimpleStub');

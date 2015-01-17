@@ -25,7 +25,7 @@ class Test_OX_Extension_DeliveryLog_Setup extends UnitTestCase
 
     function __construct()
     {
-        $this->UnitTestCase();
+        parent::__construct();
     }
 
     function testGetDependencyOrderedPlugins()

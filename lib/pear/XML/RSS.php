@@ -174,7 +174,7 @@ class XML_RSS extends XML_Parser
         if ($srcenc === null && $tgtenc === null) {
             parent::__construct();
         } else {
-            $this->XML_Parser($srcenc, 'event', $tgtenc);
+            parent::__construct($srcenc, 'event', $tgtenc);
         }
 
         $this->setInput($handle);

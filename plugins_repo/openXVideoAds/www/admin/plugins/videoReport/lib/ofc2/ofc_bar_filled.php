@@ -6,7 +6,7 @@ class bar_filled_value extends bar_value
 {
 	function __construct( $top, $bottom=null )
 	{
-		parent::bar_value( $top, $bottom );	
+		parent::__construct( $top, $bottom );	
 	}
 	
 	function set_outline_colour( $outline_colour )

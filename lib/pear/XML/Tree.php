@@ -252,7 +252,7 @@ class XML_Tree extends XML_Parser
     {
         $this->i = null;
         $this->folding = false;
-        $this->XML_Parser(null, 'event');
+        parent::__construct(null, 'event');
         $this->cdata = null;
         $err = $this->parseString($str);
         if (PEAR::isError($err)) {

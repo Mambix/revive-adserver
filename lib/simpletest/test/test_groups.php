@@ -8,7 +8,7 @@
 
     class UnitTests extends TestSuite {
         function __construct() {
-            $this->TestSuite('Unit tests');
+            parent::__construct('Unit tests');
             $path = dirname(__FILE__);
             $this->addTestFile($path . '/errors_test.php');
             if (version_compare(phpversion(), '5') >= 0) {

@@ -344,7 +344,7 @@ class ZoneBannerHandler extends ZoneAdObjectHandler
 {
     function __construct($prefix, $zone_id, $sIdList)
     {
-        $this->ZoneAdObjectHandler($prefix, $zone_id, $sIdList, 'bannerid');
+        parent::__construct($prefix, $zone_id, $sIdList, 'bannerid');
     }
 
 

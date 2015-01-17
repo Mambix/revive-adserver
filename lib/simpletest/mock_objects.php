@@ -43,7 +43,7 @@
          *    @access public
          */
         function __construct($expected = false, $message = '%s') {
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
             $this->_expected = $expected;
         }
 
@@ -175,7 +175,7 @@
         function __construct($method, $count, $message = '%s') {
             $this->_method = $method;
             $this->_count = $count;
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
         }
 
         /**
@@ -218,7 +218,7 @@
         function __construct($method, $count, $message = '%s') {
             $this->_method = $method;
             $this->_count = $count;
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
         }
 
         /**
@@ -261,7 +261,7 @@
         function __construct($method, $count, $message = '%s') {
             $this->_method = $method;
             $this->_count = $count;
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
         }
 
         /**

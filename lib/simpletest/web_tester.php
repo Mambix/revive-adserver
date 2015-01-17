@@ -31,7 +31,7 @@
          *    @access public
          */
         function __construct($value, $message = '%s') {
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
             if (is_array($value)) {
                 sort($value);
             }
@@ -145,7 +145,7 @@
          *                            a placeholder for the original message.
          */
         function __construct($header, $value = false, $message = '%s') {
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
             $this->_expected_header = $this->_normaliseHeader($header);
             $this->_expected_value = $value;
         }
@@ -271,7 +271,7 @@
          *                              a placeholder for the original message.
          */
         function __construct($unwanted, $message = '%s') {
-            $this->HttpHeaderExpectation($unwanted, false, $message);
+            parent::__construct($unwanted, false, $message);
         }
 
         /**
@@ -316,7 +316,7 @@
          *    @access public
          */
         function __construct($substring, $message = '%s') {
-            $this->SimpleExpectation($message);
+            parent::__construct($message);
             $this->_substring = $substring;
         }
 
@@ -389,7 +389,7 @@
          *    @access public
          */
         function __construct($substring, $message = '%s') {
-            $this->TextExpectation($substring, $message);
+            parent::__construct($substring, $message);
         }
 
         /**
